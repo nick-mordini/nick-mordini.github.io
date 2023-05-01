@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Microcontroller Systems Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #5B2418;
+    }
+    .text-section {
+      width: 46%;
+      border: 10px solid #2B110C;
+      padding: 20px;
+      float: left;
+      color: #eff6ee;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .media-section {
+      width: 46%;
+      border: 10px solid #2B110C;
+      padding: 20px;
+      float: right;
+      color: #eff6ee;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .contact-section {
+      width: 46%;
+      border: 10px solid #2B110C;
+      padding: 20px;
+      float: right;
+      color: #eff6ee;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      right: 0;
+    }
+    .photo {
+      position: absolute;
+      top: 2090px;
+      right: 50px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="media-section">
+            <video width="750" height="578" controls>
+                <source src="sequencer_finalproduct.mp4" type="video/mp4">
+    </div>    
+
+
+    <div class="text-section">
+        <h1>MSP432 Microcontroller Project: Sequencer</h1>
+        <p>
+            Welcome to my portfolio website showcasing my final project, a sequencer. The sequencer allows you to trigger notes using buttons and switches, with the option to adjust the 
+            tempo using a potentiometer. The project utilizes timers and interrupts to generate sound and provide interactive
+            functionality. It uses the MSP432 microcontroller. </p>
+            <br>
+        <p>The sequencer project includes the following features and functionalities:</p>
+
+        <li>Port Functions: Initialize and manage project ports (P1, P2, P3, P4, P5, and P7).</li>
+            <br>   
+        <li>Timer Functions: Handle timing and sound generation with Timer A0, A1, and A2.</li>
+            <br> 
+        <li>Interrupt Functions: Configure button and switch interrupts for the sequencer.</li>
+            <br> 
+        <li>ADC Functions: Read input values from a potentiometer using ADC initialization.</li>
+            <br> 
+        <li>Speaker Functions: Control the speaker and play notes.</li>
+            <br>
+            <br>
+        <p>To the right is a final demonstration of the project. →</p>
+    </div>
+
+
+    </div>
+   <div class="media-section">
+    <img src="concept_image2.png" width="750" height="660">
+   </div>
+
+
+   <div class="text-section">
+    <h1>Original Concept Description:</h1>
+        <br>
+    <p>The project incorporated the following ideas:</p>
+
+    <li>Button-controlled Notes: This will allow users to turn on and off specific musical notes using buttons. Each 
+        button corresponded to a different note, providing a customizable and interactive playing experience.</li>
+        <br>   
+    <li>Pitch Control: A potentiometer will be utilized to adjust the pitch of the notes. By turning the potentiometer, users could 
+        modulate the frequency of the played notes, allowing for expressive and dynamic performances.</li>
+        <br> 
+    <li>Tempo Control: Another potentiometer will be used to control the tempo of the music. Users could increase or 
+        decrease the tempo, influencing the speed at which the notes were played.</li>
+        <br> 
+    <li>RGB LED Feedback: To enhance the visual aspect of the instrument, we will integrat RGB LEDs that will display
+        different colors to represent the state of each note. The LEDs illuminated in distinct colors to indicate whether a note is on 
+        or off.</li>
+        <br> 
+    <li>Speaker Playback: The speaker will play the corresponding notes by running through the sequence. Running through 
+        the sequence will also light up the LEDs of the note being played.</li>
+        <br> 
+    <p>The original concept of this project was to design a sequencer using the MSP432 microcontroller. It aimed to combine 
+        interactive controls, visual feedback, and musical expression, creating a unique and engaging experience.</p>
+        <br>
+    </div>
+    
+
+    
+<div class="text-section">
+    <h1>Problems Encountered:</h1>
+
+    <p>LED Sequencing:</p>
+    <li>Incorrect LED sequence: The LEDs were not going through the sequence correctly, blinking irregularly instead of 
+        following the desired pattern.</li>
+        <br>
+    <li>Dim LEDs: Initially, the LEDs were not bright enough, and replacing the resistors with lower ohm ones was necessary 
+        to achieve the desired brightness.</li>
+
+    <p>Push Button Functionality:</p>
+    <li>Incorrect button activation: The push buttons were not activating the intended array due to setting them for active high 
+        instead of active low. This issue was related to how the interrupts were coded.</li>
+
+    <p>State Machine and On/Off Button:</p>
+    <li>State setting issue: Difficulties were encountered in correctly setting the state in the state machine when working on 
+        the on/off button functionality. The code was not properly updating the state, affecting the expected behavior.</li>
+
+    <p>These obstacles highlight the challenges faced in implementing the LED sequencing, LED brightness, configuring the 
+        push buttons for the correct activation, and ensuring the proper functioning of the state machine related to the on/off 
+        button.</p>
+</div>
+
+
+    <div class="media-section">
+        <div class="left">
+            <video width="250" height="559" controls>
+                <source src="LED1.MOV" type="video/mp4">
+            </div>
+        <div class="center">
+            <video width="250" height="559" controls>
+                <source src="LED2.MOV" type="video/mp4">
+            </div>
+        <div class="right">
+            <video width="250" height="559" controls>
+                <source src="LED3.MOV" type="video/mp4">
+            </div>
+        </div>
+    </div> 
+    
+
+    <div class="text-section">
+        <h1>Possible Improvements With More Time:</h1>
+        <p>One possible improvement that could have been made to the project is to incorporate additional LEDs for visualizing the 
+            active notes. This would provide a clearer representation of the notes that are currently playing, enhancing the overall 
+            user experience.
+            <br>
+        <p>Another improvement could have been to integrate a potentiometer for adjusting the pitch of the notes. This would allow 
+            users to customize the musical output and explore different melodies or harmonies, adding more versatility to the 
+            instrument.
+            <br>
+        <p>By implementing these enhancements, the project would have offered a more engaging and interactive musical 
+            experience, providing users with more control over their compositions.</p>
+    </div>
+
+
+    <div class="contact-section">
+        <h1>Contact:</h1>
+        <h3>Nicolas A. Mordini</h3>
+        <h3>nam8802@rit.edu</h3>
+        <h3>(571) 201 0805</h3>
+        <br> <br> <br> <br> 
+        <div class="photo">
+            <img src="nickmordini.jpg" width="300" height="300">  
+        </div>
+</body>
+</html>
